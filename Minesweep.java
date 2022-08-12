@@ -39,9 +39,9 @@ public class Minesweep{
 				if(bombs[i][j]==1){
 					board[i][j]=0;
 				}
-				System.out.print(board[i][j] + " ");
+				//System.out.print(board[i][j] + " "); <---- Remove comment to show the full board with all squares displayed
 				}
-			System.out.println();
+			//System.out.println();                        <---- ^^^
 		}
 		int[][] visual = new int[board.length][board[0].length];
 		while(true){
