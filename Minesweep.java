@@ -101,7 +101,7 @@ public class Minesweep{
 						k = map.get(i).split(",");
 						temprow = Integer.parseInt(k[0]);
 						tempcol = Integer.parseInt(k[1]);
-						System.out.println(map.get(i));
+						//System.out.println(map.get(i));
 						if(temprow-1>=0 && tempcol+1<board.length-1){
 							visual[temprow-1][tempcol+1]=board[temprow-1][tempcol+1];
 						}
@@ -127,7 +127,7 @@ public class Minesweep{
 							visual[temprow][tempcol-1]=board[temprow][tempcol-1];
 						}
 					}
-					System.out.println(col + " " + row + " " + tempcol + " " + temprow);
+					//System.out.println(col + " " + row + " " + tempcol + " " + temprow);
 					if(row==temprow && col==tempcol){
 						break;
 					}
